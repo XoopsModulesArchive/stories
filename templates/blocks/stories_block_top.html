@@ -1,0 +1,5 @@
+<ul>
+  <{foreach item=news from=$block.stories}>
+    	<li><a href="<{$xoops_url}>/modules/stories/article.php?storyid=<{$news.id}>"><{$news.title}></a> (<{$news.hits}>)<{$news.unread}></li>
+  <{/foreach}>
+</ul>

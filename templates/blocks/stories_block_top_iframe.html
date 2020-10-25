@@ -1,0 +1,11 @@
+<{if $block.story_id != ""}>
+  <center><u><{$block.blocktitle}></u></center>
+  <i><center><{$block.message}></i></center>
+  <center><a href="<{$xoops_url}>/modules/stories/article.php?storyid=<{$block.story_id}>"><{$block.story_title}></a> <font style='font-size: 9px;'><{$block.comments}></font></center>
+<{/if}>
+<{if $block.cstory_id != ""}>
+  <center><i><{$block.cmessage}></i></center>
+  <center><a href="<{$xoops_url}>/modules/stories/article.php?storyid=<{$block.cstory_id}>"><{$block.cstory_title}></a> <font style='font-size: 9px;'><{$block.ccomments}></font></center>
+<{/if}>
+<center><iframe name="topStoriesFrame" width="<{$block.iframewidth}>" src="<{$block.iframeurl}>" height="300" frameborder="1" scrolling="auto" style="overflow: clip;" >Your browser does not display IFRAMEs.</iframe></center>
+
